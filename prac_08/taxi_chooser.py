@@ -5,10 +5,11 @@ MENU = """
 Let's drive!
 q)uit, c)hoose taxi, d)rive
 """
-current_taxi = None
+
 
 
 def main():
+    current_taxi = None
     print(MENU)
     user_choice = None
     while user_choice != 'q':
