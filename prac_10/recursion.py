@@ -12,18 +12,40 @@ def do_it(n):
 
 
 # TODO: 1. write down what you think the output of this will be,
+# 5 mod 2 = 1
+# 4 mod 2 = 0
+# 3 mod 2 = 1
+# 2 mod 2 = 0
+# 1 mod 2 = 1
+# 1 + 1 + 1= 3
+# output will be 3
 # TODO: 2. use the debugger to step through and see what's actually happening
 print(do_it(5))
 
-
+"""
 def do_something(n):
-    """Print the squares of positive numbers from n down to 0."""
+    # Print the squares of positive numbers from n down to 0.
     if n < 0:
         print(n ** 2)
     do_something(n - 1)
 
 # TODO: 3. write down what you think the output of do_something(4) will be,
+# output will be -1
 # TODO: 4. use the debugger to step through and see what's actually happening
-# do_something(4)
+do_something(4)
 
 # TODO: 5. fix do_something() so that it works according to the docstring
+"""
+
+
+def build_pyramid(n):
+    n = int(input("How many rows do you need?"))
+    if n <= 0:
+        return 0
+
+   # for n in enumerate(n):
+    #    total_blocks = (n + (n - 1))
+    print("The number of blocks for {} rows is: {}".format(n, total_blocks))
+
+
+build_pyramid()
